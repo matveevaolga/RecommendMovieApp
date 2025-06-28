@@ -11,7 +11,10 @@
 3. Подключите конфиг в Xcode
    - Откройте настройки проекта → вкладка Info
    - Для Debug и Release конфигураций укажите Configs/Secrets.xcconfig
-4. Добавьте в Info.plist
-    Вставьте перед закрывающим </dict>:
+4. Добавьте в Info.plist:
+   
+   - Вставьте перед закрывающим </dict>:
+     
         <key>TMDB_API_KEY</key>
+        
         <string>$(TMDB_API_KEY)</string>
