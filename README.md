@@ -13,8 +13,8 @@
    - Для Debug и Release конфигураций укажите Configs/Secrets.xcconfig
 4. Добавьте в Info.plist:
    
-   - Вставьте перед закрывающим </dict>:
+   - Вставьте перед закрывающим `</dict>`:
      
-        <key>TMDB_API_KEY</key>
+        `<key>TMDB_API_KEY</key>`
         
-        <string>$(TMDB_API_KEY)</string>
+        `<string>$(TMDB_API_KEY)</string>`
