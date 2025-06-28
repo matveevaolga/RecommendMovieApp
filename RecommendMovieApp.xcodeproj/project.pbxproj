@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		332498E82E1019B300F81A34 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 332498E72E1019B300F81A34 /* KeychainSwift */; };
 		336C73D32E0F488600909E85 /* RecommendMovieAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C73D22E0F488600909E85 /* RecommendMovieAppApp.swift */; };
 		336C73D52E0F488600909E85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C73D42E0F488600909E85 /* ContentView.swift */; };
 		336C73D72E0F488700909E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 336C73D62E0F488700909E85 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		336C73E42E0F488700909E85 /* RecommendMovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C73E32E0F488700909E85 /* RecommendMovieAppTests.swift */; };
 		336C73EE2E0F488700909E85 /* RecommendMovieAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C73ED2E0F488700909E85 /* RecommendMovieAppUITests.swift */; };
 		336C73F02E0F488700909E85 /* RecommendMovieAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C73EF2E0F488700909E85 /* RecommendMovieAppUITestsLaunchTests.swift */; };
+		33E840252E102CCD007838B4 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 33E840242E102CCD007838B4 /* Secrets.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		336C73E92E0F488700909E85 /* RecommendMovieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecommendMovieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		336C73ED2E0F488700909E85 /* RecommendMovieAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendMovieAppUITests.swift; sourceTree = "<group>"; };
 		336C73EF2E0F488700909E85 /* RecommendMovieAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendMovieAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		33E840242E102CCD007838B4 /* Secrets.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Secrets.xcconfig; path = Configs/Secrets.xcconfig; sourceTree = "<group>"; };
+		33E840262E102F65007838B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332498E82E1019B300F81A34 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,7 @@
 		336C73C62E0F488600909E85 = {
 			isa = PBXGroup;
 			children = (
+				33E840242E102CCD007838B4 /* Secrets.xcconfig */,
 				336C73D12E0F488600909E85 /* RecommendMovieApp */,
 				336C73E22E0F488700909E85 /* RecommendMovieAppTests */,
 				336C73EC2E0F488700909E85 /* RecommendMovieAppUITests */,
@@ -94,6 +100,7 @@
 		336C73D12E0F488600909E85 /* RecommendMovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				33E840262E102F65007838B4 /* Info.plist */,
 				336C73D22E0F488600909E85 /* RecommendMovieAppApp.swift */,
 				336C73D42E0F488600909E85 /* ContentView.swift */,
 				336C73D62E0F488700909E85 /* Assets.xcassets */,
@@ -143,6 +150,9 @@
 			dependencies = (
 			);
 			name = RecommendMovieApp;
+			packageProductDependencies = (
+				332498E72E1019B300F81A34 /* KeychainSwift */,
+			);
 			productName = RecommendMovieApp;
 			productReference = 336C73CF2E0F488600909E85 /* RecommendMovieApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +225,10 @@
 				Base,
 			);
 			mainGroup = 336C73C62E0F488600909E85;
+			packageReferences = (
+				336C73FE2E10172F00909E85 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				332498E62E10195E00F81A34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 336C73D02E0F488600909E85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +247,7 @@
 			files = (
 				336C73DA2E0F488700909E85 /* Preview Assets.xcassets in Resources */,
 				336C73D72E0F488700909E85 /* Assets.xcassets in Resources */,
+				33E840252E102CCD007838B4 /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +312,7 @@
 /* Begin XCBuildConfiguration section */
 		336C73F12E0F488700909E85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E840242E102CCD007838B4 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -360,6 +376,7 @@
 		};
 		336C73F22E0F488700909E85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E840242E102CCD007838B4 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -424,6 +441,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RecommendMovieApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecommendMovieApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +471,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RecommendMovieApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecommendMovieApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -582,6 +603,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		332498E62E10195E00F81A34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.15.0;
+			};
+		};
+		336C73FE2E10172F00909E85 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		332498E72E1019B300F81A34 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 336C73FE2E10172F00909E85 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 336C73C72E0F488600909E85 /* Project object */;
 }
