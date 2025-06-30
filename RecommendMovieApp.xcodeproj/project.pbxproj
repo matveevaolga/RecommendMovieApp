@@ -23,6 +23,9 @@
 		33E840342E12C497007838B4 /* SortingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E840332E12C497007838B4 /* SortingOptions.swift */; };
 		33E840362E12C71F007838B4 /* URL+TMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E840352E12C71F007838B4 /* URL+TMDB.swift */; };
 		33E840382E12C90E007838B4 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E840372E12C90E007838B4 /* Genre.swift */; };
+		33E8403D2E16C22C007838B4 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8403C2E16C22C007838B4 /* MovieListView.swift */; };
+		33E8403F2E16C285007838B4 /* MovieListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8403E2E16C285007838B4 /* MovieListViewViewModel.swift */; };
+		33E840412E16C34A007838B4 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E840402E16C34A007838B4 /* MovieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		33E840332E12C497007838B4 /* SortingOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingOptions.swift; sourceTree = "<group>"; };
 		33E840352E12C71F007838B4 /* URL+TMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+TMDB.swift"; sourceTree = "<group>"; };
 		33E840372E12C90E007838B4 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		33E8403C2E16C22C007838B4 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		33E8403E2E16C285007838B4 /* MovieListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewViewModel.swift; sourceTree = "<group>"; };
+		33E840402E16C34A007838B4 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,9 @@
 		336C73D12E0F488600909E85 /* RecommendMovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				33E8403B2E16C176007838B4 /* Models */,
+				33E8403A2E16C14B007838B4 /* Views */,
+				33E840392E16C121007838B4 /* ViewModels */,
 				33E840272E12C35C007838B4 /* TMDBApi */,
 				33E840262E102F65007838B4 /* Info.plist */,
 				336C73D22E0F488600909E85 /* RecommendMovieAppApp.swift */,
@@ -185,6 +194,30 @@
 				33E840352E12C71F007838B4 /* URL+TMDB.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		33E840392E16C121007838B4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				33E8403E2E16C285007838B4 /* MovieListViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		33E8403A2E16C14B007838B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33E8403C2E16C22C007838B4 /* MovieListView.swift */,
+				33E840402E16C34A007838B4 /* MovieView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		33E8403B2E16C176007838B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,12 +359,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E840382E12C90E007838B4 /* Genre.swift in Sources */,
+				33E840412E16C34A007838B4 /* MovieView.swift in Sources */,
 				336C73D52E0F488600909E85 /* ContentView.swift in Sources */,
 				336C73D32E0F488600909E85 /* RecommendMovieAppApp.swift in Sources */,
 				33E840342E12C497007838B4 /* SortingOptions.swift in Sources */,
+				33E8403F2E16C285007838B4 /* MovieListViewViewModel.swift in Sources */,
 				33E8402C2E12C423007838B4 /* TMDBApiManager.swift in Sources */,
 				33E8402E2E12C447007838B4 /* PageWithMovies.swift in Sources */,
 				33E840302E12C463007838B4 /* Movie.swift in Sources */,
+				33E8403D2E16C22C007838B4 /* MovieListView.swift in Sources */,
 				33E840362E12C71F007838B4 /* URL+TMDB.swift in Sources */,
 				33E840322E12C47E007838B4 /* MovieDetails.swift in Sources */,
 			);
