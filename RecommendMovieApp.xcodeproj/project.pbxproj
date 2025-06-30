@@ -16,6 +16,13 @@
 		336C73EE2E0F488700909E85 /* RecommendMovieAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C73ED2E0F488700909E85 /* RecommendMovieAppUITests.swift */; };
 		336C73F02E0F488700909E85 /* RecommendMovieAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C73EF2E0F488700909E85 /* RecommendMovieAppUITestsLaunchTests.swift */; };
 		33E840252E102CCD007838B4 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 33E840242E102CCD007838B4 /* Secrets.xcconfig */; };
+		33E8402C2E12C423007838B4 /* TMDBApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8402B2E12C423007838B4 /* TMDBApiManager.swift */; };
+		33E8402E2E12C447007838B4 /* PageWithMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8402D2E12C447007838B4 /* PageWithMovies.swift */; };
+		33E840302E12C463007838B4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8402F2E12C463007838B4 /* Movie.swift */; };
+		33E840322E12C47E007838B4 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E840312E12C47E007838B4 /* MovieDetails.swift */; };
+		33E840342E12C497007838B4 /* SortingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E840332E12C497007838B4 /* SortingOptions.swift */; };
+		33E840362E12C71F007838B4 /* URL+TMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E840352E12C71F007838B4 /* URL+TMDB.swift */; };
+		33E840382E12C90E007838B4 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E840372E12C90E007838B4 /* Genre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		336C73EF2E0F488700909E85 /* RecommendMovieAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendMovieAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		33E840242E102CCD007838B4 /* Secrets.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Secrets.xcconfig; path = Configs/Secrets.xcconfig; sourceTree = "<group>"; };
 		33E840262E102F65007838B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		33E8402B2E12C423007838B4 /* TMDBApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBApiManager.swift; sourceTree = "<group>"; };
+		33E8402D2E12C447007838B4 /* PageWithMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageWithMovies.swift; sourceTree = "<group>"; };
+		33E8402F2E12C463007838B4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		33E840312E12C47E007838B4 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
+		33E840332E12C497007838B4 /* SortingOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingOptions.swift; sourceTree = "<group>"; };
+		33E840352E12C71F007838B4 /* URL+TMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+TMDB.swift"; sourceTree = "<group>"; };
+		33E840372E12C90E007838B4 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +114,7 @@
 		336C73D12E0F488600909E85 /* RecommendMovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				33E840272E12C35C007838B4 /* TMDBApi */,
 				33E840262E102F65007838B4 /* Info.plist */,
 				336C73D22E0F488600909E85 /* RecommendMovieAppApp.swift */,
 				336C73D42E0F488600909E85 /* ContentView.swift */,
@@ -132,6 +147,44 @@
 				336C73EF2E0F488700909E85 /* RecommendMovieAppUITestsLaunchTests.swift */,
 			);
 			path = RecommendMovieAppUITests;
+			sourceTree = "<group>";
+		};
+		33E840272E12C35C007838B4 /* TMDBApi */ = {
+			isa = PBXGroup;
+			children = (
+				33E8402A2E12C382007838B4 /* Extensions */,
+				33E840292E12C379007838B4 /* Enums */,
+				33E840282E12C370007838B4 /* Models */,
+				33E8402B2E12C423007838B4 /* TMDBApiManager.swift */,
+			);
+			path = TMDBApi;
+			sourceTree = "<group>";
+		};
+		33E840282E12C370007838B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33E8402D2E12C447007838B4 /* PageWithMovies.swift */,
+				33E8402F2E12C463007838B4 /* Movie.swift */,
+				33E840312E12C47E007838B4 /* MovieDetails.swift */,
+				33E840372E12C90E007838B4 /* Genre.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		33E840292E12C379007838B4 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				33E840332E12C497007838B4 /* SortingOptions.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		33E8402A2E12C382007838B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				33E840352E12C71F007838B4 /* URL+TMDB.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,8 +325,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E840382E12C90E007838B4 /* Genre.swift in Sources */,
 				336C73D52E0F488600909E85 /* ContentView.swift in Sources */,
 				336C73D32E0F488600909E85 /* RecommendMovieAppApp.swift in Sources */,
+				33E840342E12C497007838B4 /* SortingOptions.swift in Sources */,
+				33E8402C2E12C423007838B4 /* TMDBApiManager.swift in Sources */,
+				33E8402E2E12C447007838B4 /* PageWithMovies.swift in Sources */,
+				33E840302E12C463007838B4 /* Movie.swift in Sources */,
+				33E840362E12C71F007838B4 /* URL+TMDB.swift in Sources */,
+				33E840322E12C47E007838B4 /* MovieDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +494,7 @@
 		336C73F42E0F488700909E85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = 3904516e47fd2d0f8f7a6a4d49afdbef;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +525,7 @@
 		336C73F52E0F488700909E85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = 3904516e47fd2d0f8f7a6a4d49afdbef;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
